@@ -3,12 +3,19 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
 
-- file: demo
-- file: ollama
-- file: record
-- file: unittest
+parts:
+  - caption: code_helper
+    chapters:
+    - file: demo
+    - file: code
+    - file: ollama
+
+    
+  - caption: zxftools
+    chapters:
+    - file: record
+    - file: unittest
+    - url: https://www.baidu.com
+
+
