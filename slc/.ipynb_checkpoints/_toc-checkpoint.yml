@@ -15,10 +15,12 @@ parts:
     chapters:
     - file: record
     - file: unittest
+      title: unittest 执行
     - url: https://www.baidu.com
     - url: http://127.0.0.1:8020
-      title: Example website
+      title: 私有文档
     - url: http://127.0.0.1:8610
+      title: 工作区
 
   - caption: zxfMLtools
     chapters:
