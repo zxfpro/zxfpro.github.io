@@ -1,0 +1,14 @@
+fire==0.5.0
+func-timeout==4.3.5
+numpy==1.26.1
+pandas==2.1.1
+pypng==0.20220715.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+qrcode==7.4.2
+six==1.16.0
+termcolor==2.3.0
+tqdm==4.66.1
+typing_extensions==4.8.0
+tzdata==2023.3

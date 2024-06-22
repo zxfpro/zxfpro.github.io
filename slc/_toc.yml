@@ -17,5 +17,10 @@ parts:
     - file: record
     - file: unittest
     - url: https://www.baidu.com
+    - url: 127.0.0.1:8020
+    - url: 127.0.0.1:8610
 
 
+  - caption: zxfMLtools
+    chapters:
+    - file: zxfMLtools
