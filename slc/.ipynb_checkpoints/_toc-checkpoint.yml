@@ -11,15 +11,14 @@ parts:
     - file: code
     - file: ollama
 
-    
   - caption: zxftools
     chapters:
     - file: record
     - file: unittest
     - url: https://www.baidu.com
     - url: http://127.0.0.1:8020
-    - url: http://127.0.0.1:8610
         title: Example website
+    - url: http://127.0.0.1:8610
 
   - caption: zxfMLtools
     chapters:
