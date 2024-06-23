@@ -1,7 +1,0 @@
-2024-06-17 15:15:44.145 | INFO     | test_logger:test_use:8 - tests
-2024-06-17 15:16:56.090 | ERROR    | zxftools.project.logger:wrapper:86 - error in tes: exceptions must derive from BaseException
-
- params:
-
-
-

@@ -1,2 +1,0 @@
-from .load_data import load_data
-from .indexmaker import IndexMaker,IndexType,SplitterFactory,SplitterType,ExtractorFactory,ExtractorType,EmbeddingFactory,EmbeddingType

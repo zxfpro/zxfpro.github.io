@@ -1,0 +1,2 @@
+[{"host": "192.168.8.125", "username": "qe", "password": "qe1234", "containers": ["2d2a6748b9be"]},
+  {"host": "192.168.8.126", "username": "qe", "password": "qe1234", "containers": ["165cbf51f881"]}]
