@@ -12,8 +12,18 @@ parts:
 
   - caption: 专题教学
     chapters:
+    - file: 专题教学库/API
+      title: API的使用
+    - file: 专题教学库/AppleScript
+      title: applescript的使用
+    - file: 专题教学库/Asyncio
+      title: asyncio的使用
     - file: 专题教学库/docker
       title: docker的使用
+    - file: 专题教学库/gradrails
+      title: gradrails的使用
+    - file: 专题教学库/Gradio
+      title: gradio的使用 streamlit的使用
     - file: 专题教学库/ollama
       title: ollama的使用
     - file: 专题教学库/demos
@@ -30,4 +40,4 @@ parts:
     - url: http://127.0.0.1:8020
       title: 私有文档
     - url: http://127.0.0.1:9000
-      title: 工作区
+      title: 工作台
