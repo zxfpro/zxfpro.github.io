@@ -6,14 +6,15 @@
 #######################################################################################
 # Book settings
 title                       : vvm  # The title of the book. Will be placed in the left navbar.
-author                      : zx  # The author of the book
+author                      : zxf  # The author of the book
 copyright                   : "2024"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
+# force
 execute:
-  execute_notebooks: force
+  execute_notebooks: off
 
 # Define the name of the latex output file for PDF builds
 latex:
