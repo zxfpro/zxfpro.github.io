@@ -1,1 +1,0 @@
-cp ./aigen_magic.py ~/.ipython/profile_default/startup/aigen_magic.py
