@@ -70,4 +70,6 @@ parts:
       title: sot包
     - file: 研究者/sotuser
       title: sot包的使用
-      
+    - file: 研究者/cookbook/sales_agent_with_context
+      title: sot包的使用  
+    
