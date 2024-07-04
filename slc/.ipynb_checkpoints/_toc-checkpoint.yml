@@ -58,18 +58,7 @@ parts:
 
   - caption: 实验性内容
     chapters:
-    - file: 研究者/camel_package
-      title: camel包
-    - file: 研究者/camel_user
-      title: camel使用
-    - file: 研究者/dargen_package
-      title: d包
-    - file: 研究者/dargen_user
-      title: d包的使用
-    - file: 研究者/sotgpt
-      title: sot包
-    - file: 研究者/sotuser
-      title: sot包的使用
-    - file: 研究者/cookbook/sales_agent_with_context
-      title: sot包的使用  
+    - file: 研究者/thought
+      title: thought
+
     
