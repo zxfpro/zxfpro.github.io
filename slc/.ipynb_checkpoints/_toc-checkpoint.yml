@@ -50,6 +50,8 @@ parts:
       title: package的制作
     - file: 专题教学库/shells
       title: shell的制作
+    - file: 专题教学库/selenium爬虫
+      title: 爬虫教学
 
   - caption: 学习
     chapters:
