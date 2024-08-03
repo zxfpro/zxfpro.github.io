@@ -1,66 +1,85 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
-root: intro
-
 parts:
-  - caption: 小函数工具库
-    chapters:
-    - file: 工具函数库/code
-      title: 独立工具函数
-    - file: 工具函数库/note #草稿
-      title: 札记
-    - url: http://127.0.0.1:9000
-      title: 工作台
-    - url: http://127.0.0.1:8020
-      title: 私有文档
-      
-  - caption: 小包教程
-    chapters:
-    - file: 小包教程/dataset
-      title: dataset的使用
-    - file: 小包教程/train
-      title: train的使用
-      
-
-  - caption: 专题教学
-    chapters:
-    - file: 专题教学库/API
-      title: API的使用
-    - file: 专题教学库/AppleScript
-      title: applescript的使用
-    - file: 专题教学库/Asyncio
-      title: asyncio的使用
-    - file: 专题教学库/docker
-      title: docker的使用
-    - file: 专题教学库/gradrails
-      title: gradrails的使用
-    - file: 专题教学库/Gradio
-      title: gradio的使用 streamlit的使用
-    - file: 专题教学库/ollama
-      title: ollama的使用
-    - file: 专题教学库/demos
-      title: 一些常规的demo
-    - file: 专题教学库/project
-      title: 构建project
-    - file: 专题教学库/unittest
-      title: unittest 执行
-    - file: 专题教学库/package
-      title: package的制作
-    - file: 专题教学库/shells
-      title: shell的制作
-    - file: 专题教学库/selenium爬虫
-      title: 爬虫教学
-
-  - caption: 学习
-    chapters:
-    - file: study/传感器实验篇/1.双色LED灯实验
-      title: 1.双色LED灯实验
-
-  - caption: 实验性内容
-    chapters:
-    - file: 研究者/thought
-      title: thought
-
-    
+- caption: study
+  chapters:
+  - file: "study/\u7B97\u6CD5"
+    title: "\u7B97\u6CD5"
+- caption: "\u65B0\u9510\u5B9E\u9A8C"
+  chapters:
+  - file: "\u65B0\u9510\u5B9E\u9A8C/azure_container_apps_dynamic_sessions_data_analyst"
+    title: azure_container_apps_dynamic_sessions_data_analyst
+  - file: "\u65B0\u9510\u5B9E\u9A8C/dargen_package"
+    title: dargen_package
+  - file: "\u65B0\u9510\u5B9E\u9A8C/self discover"
+    title: self discover
+  - file: "\u65B0\u9510\u5B9E\u9A8C/tree_of_thought"
+    title: tree_of_thought
+  - file: "\u65B0\u9510\u5B9E\u9A8C/plan_and_ex"
+    title: plan_and_ex
+  - file: "\u65B0\u9510\u5B9E\u9A8C/llm_bash"
+    title: llm_bash
+  - file: "\u65B0\u9510\u5B9E\u9A8C/stepback-qa"
+    title: stepback-qa
+  - file: "\u65B0\u9510\u5B9E\u9A8C/prompt"
+    title: prompt
+  - file: "\u65B0\u9510\u5B9E\u9A8C/llm_summarization_checker"
+    title: llm_summarization_checker
+  - file: "\u65B0\u9510\u5B9E\u9A8C/dargen_user"
+    title: dargen_user
+  - file: "\u65B0\u9510\u5B9E\u9A8C/anthropic_structured_outputs"
+    title: anthropic_structured_outputs
+  - file: "\u65B0\u9510\u5B9E\u9A8C/thought"
+    title: thought
+  - file: "\u65B0\u9510\u5B9E\u9A8C/wikibase_agent"
+    title: wikibase_agent
+- caption: "\u4E13\u9898\u6559\u5B66\u5E93"
+  chapters:
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/API"
+    title: API
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/shells"
+    title: shells
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/streamlit"
+    title: streamlit
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/re"
+    title: re
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/demos"
+    title: demos
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/\u9012\u5F52"
+    title: "\u9012\u5F52"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/gardrails"
+    title: gardrails
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/project"
+    title: project
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/tmux"
+    title: tmux
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/package"
+    title: package
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/Puppeteer\u722C\u866B"
+    title: "Puppeteer\u722C\u866B"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/selenium\u722C\u866B"
+    title: "selenium\u722C\u866B"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/docker"
+    title: docker
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/Gradio"
+    title: Gradio
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/AppleScript"
+    title: AppleScript
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/\u8BBE\u8BA1\u6A21\u5F0F"
+    title: "\u8BBE\u8BA1\u6A21\u5F0F"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/thread"
+    title: thread
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/ollama"
+    title: ollama
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/python\u539F\u751F\u8BED\u8A00"
+    title: "python\u539F\u751F\u8BED\u8A00"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/Asyncio"
+    title: Asyncio
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/unittest"
+    title: unittest
+- caption: "\u4E2A\u4EBA\u5305\u6559\u7A0B"
+  chapters:
+  - file: "\u4E2A\u4EBA\u5305\u6559\u7A0B/dataset"
+    title: dataset
+  - file: "\u4E2A\u4EBA\u5305\u6559\u7A0B/train"
+    title: train
+root: intro

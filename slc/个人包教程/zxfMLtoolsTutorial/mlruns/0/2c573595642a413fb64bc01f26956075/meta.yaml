@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/zhaoxuefeng/Documents/Project/docs/tutorial/zxfMLtoolsTutorial/mlruns/0/2c573595642a413fb64bc01f26956075/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2c573595642a413fb64bc01f26956075
+run_name: ./results
+run_uuid: 2c573595642a413fb64bc01f26956075
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717993646731
+status: 1
+tags: []
+user_id: zhaoxuefeng

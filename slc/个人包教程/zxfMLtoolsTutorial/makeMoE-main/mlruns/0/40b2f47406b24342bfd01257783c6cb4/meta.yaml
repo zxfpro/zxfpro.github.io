@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/zhaoxuefeng/Documents/Project/docs/tutorial/zxfMLtoolsTutorial/makeMoE-main/mlruns/0/40b2f47406b24342bfd01257783c6cb4/artifacts
+end_time: 1719146432781
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 40b2f47406b24342bfd01257783c6cb4
+run_name: dashing-skunk-386
+run_uuid: 40b2f47406b24342bfd01257783c6cb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719146403659
+status: 4
+tags: []
+user_id: zhaoxuefeng
