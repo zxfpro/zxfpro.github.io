@@ -11,37 +11,7 @@ parts:
   - title: "\u79C1\u6709\u6587\u6863"
     url: http://127.0.0.1:8020
 - caption: study
-  chapters:
-  - file: "study/\u7B97\u6CD5"
-    title: "\u7B97\u6CD5"
-- caption: "\u65B0\u9510\u5B9E\u9A8C"
-  chapters:
-  - file: "\u65B0\u9510\u5B9E\u9A8C/azure_container_apps_dynamic_sessions_data_analyst"
-    title: azure_container_apps_dynamic_sessions_data_analyst
-  - file: "\u65B0\u9510\u5B9E\u9A8C/dargen_package"
-    title: dargen_package
-  - file: "\u65B0\u9510\u5B9E\u9A8C/self discover"
-    title: self discover
-  - file: "\u65B0\u9510\u5B9E\u9A8C/tree_of_thought"
-    title: tree_of_thought
-  - file: "\u65B0\u9510\u5B9E\u9A8C/plan_and_ex"
-    title: plan_and_ex
-  - file: "\u65B0\u9510\u5B9E\u9A8C/llm_bash"
-    title: llm_bash
-  - file: "\u65B0\u9510\u5B9E\u9A8C/stepback-qa"
-    title: stepback-qa
-  - file: "\u65B0\u9510\u5B9E\u9A8C/prompt"
-    title: prompt
-  - file: "\u65B0\u9510\u5B9E\u9A8C/llm_summarization_checker"
-    title: llm_summarization_checker
-  - file: "\u65B0\u9510\u5B9E\u9A8C/dargen_user"
-    title: dargen_user
-  - file: "\u65B0\u9510\u5B9E\u9A8C/anthropic_structured_outputs"
-    title: anthropic_structured_outputs
-  - file: "\u65B0\u9510\u5B9E\u9A8C/thought"
-    title: thought
-  - file: "\u65B0\u9510\u5B9E\u9A8C/wikibase_agent"
-    title: wikibase_agent
+  chapters: []
 - caption: "\u4E13\u9898\u6559\u5B66\u5E93"
   chapters:
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/API"
@@ -62,30 +32,42 @@ parts:
     title: project
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/tmux"
     title: tmux
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/BeautifulSoup"
+    title: BeautifulSoup
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/package"
     title: package
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/Puppeteer\u722C\u866B"
     title: "Puppeteer\u722C\u866B"
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/selenium\u722C\u866B"
     title: "selenium\u722C\u866B"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/colab"
+    title: colab
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/docker"
     title: docker
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/g++\u7684\u4F7F\u7528"
+    title: "g++\u7684\u4F7F\u7528"
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/Gradio"
     title: Gradio
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/AppleScript"
     title: AppleScript
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/\u8BBE\u8BA1\u6A21\u5F0F"
     title: "\u8BBE\u8BA1\u6A21\u5F0F"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/\u7B97\u6CD52"
+    title: "\u7B97\u6CD52"
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/thread"
     title: thread
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/ollama"
     title: ollama
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/python\u539F\u751F\u8BED\u8A00"
     title: "python\u539F\u751F\u8BED\u8A00"
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/\u7B97\u6CD5"
+    title: "\u7B97\u6CD5"
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/Asyncio"
     title: Asyncio
   - file: "\u4E13\u9898\u6559\u5B66\u5E93/unittest"
     title: unittest
+  - file: "\u4E13\u9898\u6559\u5B66\u5E93/error"
+    title: error
 - caption: "\u4E2A\u4EBA\u5305\u6559\u7A0B"
   chapters:
   - file: "\u4E2A\u4EBA\u5305\u6559\u7A0B/dataset"

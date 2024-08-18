@@ -1,5 +1,0 @@
-model_list: 
-  - model_name: ollama_llama3
-    litellm_params:
-      model: llama3
-      api_base: "http://192.168.8.125:11435"
