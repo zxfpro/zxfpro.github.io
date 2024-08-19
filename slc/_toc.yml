@@ -11,8 +11,6 @@ parts:
     title: 工作台
   - url: http://127.0.0.1:8020
     title: 私有文档
-- caption: study
-  chapters: []
 - caption: 专题教学库
   chapters:
   - file: 专题教学库/API
