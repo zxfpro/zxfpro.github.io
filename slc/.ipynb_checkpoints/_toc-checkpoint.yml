@@ -3,63 +3,33 @@ root: intro
 parts:
 - caption: 小函数工具库
   chapters:
-  - file: 工具函数库/code
-    title: 独立工具函数
-  - file: 工具函数库/note
-    title: 札记
   - url: http://127.0.0.1:9000
     title: 工作台
   - url: http://127.0.0.1:8020
     title: 私有文档
 - caption: 专题教学库
   chapters:
-  - file: 专题教学库/API
-    title: API
-  - file: 专题教学库/streamlit
-    title: streamlit
-  - file: 专题教学库/re
-    title: re
-  - file: 专题教学库/递归
-    title: 递归
-  - file: 专题教学库/project
-    title: project
-  - file: 专题教学库/tmux
-    title: tmux
-  - file: 专题教学库/BeautifulSoup
-    title: BeautifulSoup
-  - file: 专题教学库/package
-    title: package
-  - file: 专题教学库/Puppeteer爬虫
-    title: Puppeteer爬虫
-  - file: 专题教学库/selenium爬虫
-    title: selenium爬虫
-  - file: 专题教学库/colab
-    title: colab
-  - file: 专题教学库/docker
-    title: docker
+  - file: 专题教学库/项目管理与自动化
+    title: 项目管理与自动化
+  - file: 专题教学库/重新部署一个机器
+    title: 重新部署一个机器
+  - file: 专题教学库/运维内容
+    title: 运维内容
+  - file: 专题教学库/爬虫内容
+    title: 爬虫内容
   - file: 专题教学库/g++的使用
     title: g++的使用
-  - file: 专题教学库/Gradio
-    title: Gradio
   - file: 专题教学库/AppleScript
     title: AppleScript
   - file: 专题教学库/设计模式
     title: 设计模式
-  - file: 专题教学库/算法2
-    title: 算法2
   - file: 专题教学库/ollama
     title: ollama
   - file: 专题教学库/python原生语言
     title: python原生语言
   - file: 专题教学库/算法
     title: 算法
-  - file: 专题教学库/Asyncio
-    title: Asyncio
-  - file: 专题教学库/unittest
-    title: unittest
-- caption: 个人包教程
-  chapters:
-  - file: 个人包教程/dataset
-    title: dataset
-  - file: 个人包教程/train
-    title: train
+  - file: 专题教学库/API编程的使用
+    title: API编程的使用
+  - file: 专题教学库/前端内容
+    title: 前端内容

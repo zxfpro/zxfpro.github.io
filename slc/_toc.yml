@@ -3,16 +3,10 @@ root: intro
 parts:
 - caption: 小函数工具库
   chapters:
-  - file: 工具函数库/code
-    title: 独立工具函数
-  - file: 工具函数库/note
-    title: 札记
   - url: http://127.0.0.1:9000
     title: 工作台
   - url: http://127.0.0.1:8020
     title: 私有文档
-- caption: study
-  chapters: []
 - caption: 专题教学库
   chapters:
   - file: 专题教学库/项目管理与自动化
