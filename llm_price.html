@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>测试报告汇总</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <style>
         :root {
@@ -139,99 +139,96 @@
             padding: 40px 0;
         }
         
-        .welcome {
+        .page-title {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 40px;
-            background-color: var(--card-background);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
+            margin-bottom: 40px;
         }
         
-        .welcome h1 {
+        .page-title h1 {
             color: var(--primary-color);
             font-size: 2.5rem;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
+            margin-bottom: 10px;
         }
         
-        .welcome h1::after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 4px;
-            background-color: var(--accent-color);
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .welcome p {
+        .page-title p {
             color: var(--light-text);
             font-size: 1.1rem;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
         }
         
-        /* Feature Cards */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .feature-card {
-            background-color: var(--card-background);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background-color: rgba(74, 107, 223, 0.1);
-            border-radius: 50%;
+        /* Report Tabs */
+        .report-tabs {
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-            font-size: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
         }
         
-        .feature-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-        
-        .feature-card p {
-            color: var(--light-text);
-            margin-bottom: 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
+        .tab {
             padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+            margin: 0 5px 10px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: 'Poppins', sans-serif;
             font-weight: 500;
+            color: var(--light-text);
             transition: all 0.3s ease;
         }
         
-        .btn:hover {
-            background-color: var(--hover-color);
-            transform: translateY(-2px);
+        .tab.active {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        /* Report Content */
+        .report-content {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            display: none;
+            overflow: hidden;
+        }
+        
+        .report-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .report-header {
+            padding: 20px;
+            background-color: rgba(74, 107, 223, 0.1);
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .report-header h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .report-header p {
+            color: var(--light-text);
+        }
+        
+        .report-body {
+            padding: 20px;
+        }
+        
+        .report-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         /* Footer Styles */
@@ -310,12 +307,16 @@
                 font-size: 0.9rem;
             }
             
-            .welcome h1 {
+            .page-title h1 {
                 font-size: 2rem;
             }
             
-            .welcome p {
+            .page-title p {
                 font-size: 1rem;
+            }
+            
+            .report-iframe {
+                height: 600px;
             }
         }
         
@@ -330,8 +331,8 @@
                 text-align: center;
             }
             
-            .feature-card {
-                padding: 20px;
+            .report-iframe {
+                height: 400px;
             }
         }
     </style>
@@ -349,7 +350,7 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html" class="active">主页</a></li>
+                <li><a href="index.html">主页</a></li>
                 <li><a href="site/index.html">文档</a></li>
                 <li><a href="contact.html">联系我们</a></li>
             </ul>
@@ -358,33 +359,38 @@
     
     <main>
         <div class="container">
-            <div class="welcome">
-                <h1>欢迎来到我的网站</h1>
-                <p>这是一个示例主页，您可以从导航栏访问其他页面。我们致力于提供最优质的测试报告和工具，帮助您更好地理解和使用各种技术解决方案。</p>
+            <div class="page-title">
+                <h1>测试报告汇总</h1>
+                <p>以下是所有测试报告的汇总页面，您可以点击相应的报告标签查看详情。</p>
             </div>
             
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>模型价格与选择</h3>
-                    <p>了解不同模型的价格比较，帮助您做出明智的选择，找到最适合您需求的解决方案。</p>
-                    <a href="llm_price.html" class="btn">查看详情</a>
-                </div>
+            <div class="report-tabs">
+                <button class="tab active" onclick="openReport('sales')">模型价格与选择</button>
                 
-                <div class="feature-card">
-                    <div class="feature-icon">🧪</div>
-                    <h3>测试报告</h3>
-                    <p>提供详细的测试报告，包括性能分析、功能测试和用户体验评估，确保产品质量。</p>
-                    <a href="test_reports.html" class="btn">查看报告</a>
+            </div>
+            
+            <!-- 销售报告 -->
+            <div id="sales" class="report-content active">
+                <div class="report-header">
+                    <h2>便携模型站</h2>
+                    <p>了解不同模型的价格比较，帮助您做出明智的选择。</p>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🛠️</div>
-                    <h3>工具资源</h3>
-                    <p>提供各种实用工具和资源，帮助您更高效地完成工作，提升生产力。</p>
-                    <a href="tools.html" class="btn">浏览工具</a>
+                <div class="report-body">
+                    <iframe class="report-iframe" src="sales_bar_chart.html"></iframe>
                 </div>
             </div>
+            
+            <!-- llmada 测试报告 -->
+            <div id="llmada" class="report-content">
+                <div class="report-header">
+                    <h2>llmada 测试报告</h2>
+                    <p>提供详细的llmada测试报告，包括性能分析和功能测试。</p>
+                </div>
+                <div class="report-body">
+                    <iframe class="report-iframe" src="llmada.html"></iframe>
+                </div>
+            </div>
+
         </div>
     </main>
     
@@ -400,7 +406,8 @@
                     <h3>快速链接</h3>
                     <ul>
                         <li><a href="index.html">主页</a></li>
-                        <li><a href="llm_price.html">模型价格</a></li>
+                        <li><a href="sales_bar_chart.html">模型价格</a></li>
+                        <li><a href="test_reports.html">测试报告</a></li>
                         <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
@@ -420,5 +427,28 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // 报告标签切换功能
+        function openReport(reportId) {
+            // 隐藏所有报告内容
+            const reportContents = document.getElementsByClassName('report-content');
+            for (let i = 0; i < reportContents.length; i++) {
+                reportContents[i].classList.remove('active');
+            }
+            
+            // 移除所有标签的活动状态
+            const tabs = document.getElementsByClassName('tab');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            // 显示选中的报告内容
+            document.getElementById(reportId).classList.add('active');
+            
+            // 设置当前标签为活动状态
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">codetools.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">codetools.html</h1>
+    <p>Report generated on 09-Apr-2025 at 13:01:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">2 tests took 00:00:29.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">1 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.2&#34;, &#34;Platform&#34;: &#34;macOS-14.5-arm64-i386-64bit-Mach-O&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.5&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;anyio&#34;: &#34;4.9.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test/test_packager.py::test_process_github_repo&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test/test_packager.py::test_process_github_repo&#34;, &#34;duration&#34;: &#34;848 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/test_packager.py::test_process_github_repo&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;848 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;def test_process_github_repo():\n        # \u6a21\u62df read_github_repo \u7684\u8fd4\u56de\u503c\n        tmp_path = &amp;quot;work2&amp;quot;\n        print(tmp_path,&amp;#x27;tmp_path&amp;#x27;)\n        test_base_path = Path(tmp_path)\n        test_base_path.mkdir(exist_ok=True)\n&amp;gt;       process_github_repo(base_path=test_base_path,github_path=&amp;#x27;tqdm/tqdm&amp;#x27;)\n\ntest/test_packager.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncodertools/packager/function.py:27: in process_github_repo\n    docs_documents = read_github_repo(owner=owner, repo=repo)\ncodertools/packager/reader.py:39: in read_github_repo\n    documents = reader.load_data(branch=branch)\n.venv/lib/python3.13/site-packages/llama_index/readers/github/repository/base.py:317: in load_data\n    return self._load_data_from_branch(branch)\n.venv/lib/python3.13/site-packages/llama_index/readers/github/repository/base.py:273: in _load_data_from_branch\n    branch_data: GitBranchResponseModel = self._loop.run_until_complete(\n/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py:725: in run_until_complete\n    return future.result()\n.venv/lib/python3.13/site-packages/llama_index/readers/github/repository/github_client.py:366: in get_branch\n    return GitBranchResponseModel.from_json(\n.venv/lib/python3.13/site-packages/dataclasses_json/api.py:63: in from_json\n    return cls.from_dict(kvs, infer_missing=infer_missing)\n.venv/lib/python3.13/site-packages/dataclasses_json/api.py:70: in from_dict\n    return _decode_dataclass(cls, kvs, infer_missing)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncls = &amp;lt;class &amp;#x27;llama_index.readers.github.repository.github_client.GitBranchResponseModel&amp;#x27;&amp;gt;, kvs = {&amp;#x27;documentation_url&amp;#x27;: &amp;#x27;https://docs.github.com/rest/branches/branches#get-a-branch&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Branch not found&amp;#x27;, &amp;#x27;status&amp;#x27;: &amp;#x27;404&amp;#x27;}, infer_missing = False\n\n    def _decode_dataclass(cls, kvs, infer_missing):\n        if _isinstance_safe(kvs, cls):\n            return kvs\n        overrides = _user_overrides_or_exts(cls)\n        kvs = {} if kvs is None and infer_missing else kvs\n        field_names = [field.name for field in fields(cls)]\n        decode_names = _decode_letter_case_overrides(field_names, overrides)\n        kvs = {decode_names.get(k, k): v for k, v in kvs.items()}\n        missing_fields = {field for field in fields(cls) if field.name not in kvs}\n    \n        for field in missing_fields:\n            if field.default is not MISSING:\n                kvs[field.name] = field.default\n            elif field.default_factory is not MISSING:\n                kvs[field.name] = field.default_factory()\n            elif infer_missing:\n                kvs[field.name] = None\n    \n        # Perform undefined parameter action\n        kvs = _handle_undefined_parameters_safe(cls, kvs, usage=&amp;quot;from&amp;quot;)\n    \n        init_kwargs = {}\n        types = get_type_hints(cls)\n        for field in fields(cls):\n            # The field should be skipped from being added\n            # to init_kwargs as it&amp;#x27;s not intended as a constructor argument.\n            if not field.init:\n                continue\n    \n&amp;gt;           field_value = kvs[field.name]\nE           KeyError: &amp;#x27;commit&amp;#x27;\n\n.venv/lib/python3.13/site-packages/dataclasses_json/core.py:185: KeyError\n\n----------------------------- Captured stdout call -----------------------------\nwork2 tmp_path\n&#34;}], &#34;test/test_packager.py::test_process_github_issues&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/test_packager.py::test_process_github_issues&#34;, &#34;duration&#34;: &#34;00:00:28&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/test_packager.py::test_process_github_issues&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:28&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nFound 100 issues in the repo page 1\nResulted in 100 documents\nFound 100 issues in the repo page 2\nResulted in 200 documents\nFound 100 issues in the repo page 3\nResulted in 300 documents\nFound 100 issues in the repo page 4\nResulted in 400 documents\nFound 100 issues in the repo page 5\nResulted in 500 documents\nFound 100 issues in the repo page 6\nResulted in 600 documents\nFound 100 issues in the repo page 7\nResulted in 700 documents\nFound 100 issues in the repo page 8\nResulted in 800 documents\nFound 100 issues in the repo page 9\nResulted in 900 documents\nFound 100 issues in the repo page 10\nResulted in 1000 documents\nFound 39 issues in the repo page 11\nResulted in 1039 documents\nNo more issues found, stopping\nMarkdown content saved to Bold description in .md\nMarkdown content saved to TQDM becomes unhappy.md\nMarkdown content saved to Wrong output in Wind.md\nMarkdown content saved to Fix bug where the th.md\nMarkdown content saved to tqdm.std: add update.md\nMarkdown content saved to desc prefix can be a.md\nMarkdown content saved to How to change color .md\nMarkdown content saved to some insane fixes_# .md\nMarkdown content saved to Allow to turn off tq.md\nMarkdown content saved to AttributeError: &amp;#x27;tqd.md\nMarkdown content saved to Release notes of 4.6.md\nMarkdown content saved to Progress bar doesn&amp;#x27;t.md\nMarkdown content saved to next release v4.67.1.md\nMarkdown content saved to 4.67.0: pytest fails.md\nMarkdown content saved to `tqdm.contrib.discor.md\nMarkdown content saved to misc minor updates_-.md\nMarkdown content saved to by n_None.md\nMarkdown content saved to changes by negar_Non.md\nMarkdown content saved to multiprocessing on p.md\nMarkdown content saved to Being able to overri.md\nMarkdown content saved to Order of multiple pr.md\nMarkdown content saved to RuntimeError: Set ch.md\nMarkdown content saved to Customised step size.md\nMarkdown content saved to Avoid Python 3.13+ R.md\nMarkdown content saved to remove pyinstaller d.md\nMarkdown content saved to update typo and desp.md\nMarkdown content saved to cli: Fix docstring p.md\nMarkdown content saved to Test failures with P.md\nMarkdown content saved to misc framework updat.md\nMarkdown content saved to Add support for sett.md\nMarkdown content saved to next release v4.66.4.md\nMarkdown content saved to Doesn&amp;#x27;t work with do.md\nMarkdown content saved to A solution for `reve.md\nMarkdown content saved to type object tqdm has.md\nMarkdown content saved to Improve documentatio.md\nMarkdown content saved to add configuration to.md\nMarkdown content saved to tqdm_notebook leave=.md\nMarkdown content saved to Spacing left in jupy.md\nMarkdown content saved to How to not display E.md\nMarkdown content saved to Force rich progress .md\nMarkdown content saved to what&amp;#x27;s the decent wa.md\nMarkdown content saved to Fix: Add display() c.md\nMarkdown content saved to Fix docstring of thr.md\nMarkdown content saved to Update prints a new .md\nMarkdown content saved to add keyword &amp;#x27;repeat&amp;#x27;.md\nMarkdown content saved to Fixed typo in std.py.md\nMarkdown content saved to next release v4.66.2.md\nMarkdown content saved to fix negative decimal.md\nMarkdown content saved to Fix DeprecationWarni.md\nMarkdown content saved to fix: keras.TqdmCallb.md\nMarkdown content saved to fix HTML-escaped spa.md\nMarkdown content saved to chore: replace depre.md\nMarkdown content saved to Replace deprecated d.md\nMarkdown content saved to Native support with .md\nMarkdown content saved to How to use tqdm to l.md\nMarkdown content saved to Smoothing time_This .md\nMarkdown content saved to Inherit the log leve.md\nMarkdown content saved to Dask support_Dask it.md\nMarkdown content saved to Updating multiproces.md\nMarkdown content saved to jupyter lab: does no.md\nMarkdown content saved to Random duplicated li.md\nMarkdown content saved to Clarify licence in p.md\nMarkdown content saved to support global confi.md\nMarkdown content saved to env var override sup.md\nMarkdown content saved to fix `envwrap` types,.md\nMarkdown content saved to Cloud logging friend.md\nMarkdown content saved to img.tqdm.ml links br.md\nMarkdown content saved to Make dynamic_ncols=T.md\nMarkdown content saved to Turn off tqdm from a.md\nMarkdown content saved to set default tqdm.dis.md\nMarkdown content saved to Set tqdm.disable fro.md\nMarkdown content saved to build: do not instal.md\nMarkdown content saved to misc build_test upda.md\nMarkdown content saved to fix jupyterlab displ.md\nMarkdown content saved to autonotebook: re-ena.md\nMarkdown content saved to Throw a warning for .md\nMarkdown content saved to tqdm fails to work i.md\nMarkdown content saved to Each iteration of pr.md\nMarkdown content saved to tqdm progress bar fl.md\nMarkdown content saved to Using tqdm when redi.md\nMarkdown content saved to Cannot reset if tota.md\nMarkdown content saved to Failing in notebook_.md\nMarkdown content saved to https:__t.me_tanishu.md\nMarkdown content saved to https:__t.me_tanisha.md\nMarkdown content saved to logging_redirect_tqd.md\nMarkdown content saved to The canonical multip.md\nMarkdown content saved to docs: fix Build-Stat.md\nMarkdown content saved to ValueError: source c.md\nMarkdown content saved to next release v4.65.0.md\nMarkdown content saved to chore(tests): add Py.md\nMarkdown content saved to Drop python 2_- [x] .md\nMarkdown content saved to How do I use the tqd.md\nMarkdown content saved to Add eight new bar co.md\nMarkdown content saved to Allow `TqdmCallback`.md\nMarkdown content saved to Estimated completion.md\nMarkdown content saved to Use dummy logger to .md\nMarkdown content saved to problem with tqdm wh.md\nMarkdown content saved to Progress output is m.md\nMarkdown content saved to color printing not p.md\nMarkdown content saved to Fix initial render i.md\nMarkdown content saved to Unnecessary_- [ ] I .md\nMarkdown content saved to Jupyter Not works we.md\nMarkdown content saved to Right align n_fmt ac.md\nMarkdown content saved to `tqdm` incompatible .md\nMarkdown content saved to next release v4.64.1.md\nMarkdown content saved to Loading bars from tq.md\nMarkdown content saved to Allow negative posit.md\nMarkdown content saved to Adding a function de.md\nMarkdown content saved to Added tqdm.asyncio i.md\nMarkdown content saved to Estimated time is no.md\nMarkdown content saved to Save description if .md\nMarkdown content saved to Auto-detect does not.md\nMarkdown content saved to PyTorch Multiprocess.md\nMarkdown content saved to Issue with hex colou.md\nMarkdown content saved to VS Code now support .md\nMarkdown content saved to using 8 GPUs in trai.md\nMarkdown content saved to pytest-asyncio Depre.md\nMarkdown content saved to UnicodeDecodeError w.md\nMarkdown content saved to Add console paramete.md\nMarkdown content saved to add contrib.slack_&amp;lt;i.md\nMarkdown content saved to next release v4.63.2.md\nMarkdown content saved to docs: fix custom cal.md\nMarkdown content saved to docs: fix typo_None.md\nMarkdown content saved to Progress bar updates.md\nMarkdown content saved to Line spacing before_.md\nMarkdown content saved to tqdm_notebook finish.md\nMarkdown content saved to Unexpected space bet.md\nMarkdown content saved to Blank lines of neste.md\nMarkdown content saved to next release v4.63.1.md\nMarkdown content saved to Ensure that stderr_s.md\nMarkdown content saved to Cannot redraw tqdm_n.md\nMarkdown content saved to Memory leak in `tqdm.md\nMarkdown content saved to tqdm.auto errors in .md\nMarkdown content saved to next release v4.63.0.md\nMarkdown content saved to Use standard tqdm if.md\nMarkdown content saved to NameError: name &amp;#x27;IPr.md\nMarkdown content saved to Add option to disabl.md\nMarkdown content saved to tqdm.dask.TqdmCallba.md\nMarkdown content saved to Notebook nested prog.md\nMarkdown content saved to tqdm object prints t.md\nMarkdown content saved to add `wrapattr`_```py.md\nMarkdown content saved to Bluetooth headphones.md\nMarkdown content saved to tqdm_gui not updatin.md\nMarkdown content saved to AttributeError: type.md\nMarkdown content saved to nested or positioned.md\nMarkdown content saved to Unable to use an old.md\nMarkdown content saved to do you plan to write.md\nMarkdown content saved to Pandas progress_map .md\nMarkdown content saved to Notebook progressbar.md\nMarkdown content saved to RuntimeError: cannot.md\nMarkdown content saved to Too wide progress ba.md\nMarkdown content saved to pb.write and print d.md\nMarkdown content saved to testcases for tqdm_n.md\nMarkdown content saved to Update document abou.md\nMarkdown content saved to Add some examples fo.md\nMarkdown content saved to Test on Python 3.10 .md\nMarkdown content saved to support pandas==1.3..md\nMarkdown content saved to README lost in trans.md\nMarkdown content saved to Tqdm Zip()_Tqdm Zip(.md\nMarkdown content saved to Time remaining and p.md\nMarkdown content saved to Enable negative prog.md\nMarkdown content saved to next release v4.62.3.md\nMarkdown content saved to [Question] &amp;quot;semi nes.md\nMarkdown content saved to next release v4.62.2.md\nMarkdown content saved to Using generator with.md\nMarkdown content saved to fix `contrib.concurr.md\nMarkdown content saved to add tenumerate_Add `.md\nMarkdown content saved to Use weakref on tqdm .md\nMarkdown content saved to `contrib.telegram`: .md\nMarkdown content saved to next release v4.62.1.md\nMarkdown content saved to Avoid telegram limit.md\nMarkdown content saved to Telegram &amp;quot;Too Many R.md\nMarkdown content saved to logging: inherit out.md\nMarkdown content saved to [pytest] ValueError:.md\nMarkdown content saved to Link to non-plain CO.md\nMarkdown content saved to `asyncio.gather` API.md\nMarkdown content saved to next release v4.62.0.md\nMarkdown content saved to Exception thrown in .md\nMarkdown content saved to tqdm.notebook not re.md\nMarkdown content saved to cannot install from .md\nMarkdown content saved to notebook progress ba.md\nMarkdown content saved to Unable to run tqdm w.md\nMarkdown content saved to Bar update after fin.md\nMarkdown content saved to tqdm.pandas() Import.md\nMarkdown content saved to next release v4.61.2.md\nMarkdown content saved to Do an automatic stre.md\nMarkdown content saved to Python 3.10 asyncio-.md\nMarkdown content saved to Error relative to Te.md\nMarkdown content saved to Running pandas df.pr.md\nMarkdown content saved to telegram: add `delet.md\nMarkdown content saved to BrokenPipeError_When.md\nMarkdown content saved to tqdm progress bar in.md\nMarkdown content saved to Added AtributeError .md\nMarkdown content saved to Fix typo_.md\nMarkdown content saved to next release v4.61.1.md\nMarkdown content saved to Jupyterlab and tqdm_.md\nMarkdown content saved to Gracefully handle em.md\nMarkdown content saved to tqdm.tk: tk.py for t.md\nMarkdown content saved to Nested progress bars.md\nMarkdown content saved to Tqdm tk_This PR adds.md\nMarkdown content saved to tqdm renders poorly .md\nMarkdown content saved to added logging sub-mo.md\nMarkdown content saved to next release v4.61.0.md\nMarkdown content saved to support for initial_.md\nMarkdown content saved to Update README.rst_Sm.md\nMarkdown content saved to notebook: support de.md\nMarkdown content saved to add appveyor.yml_- [.md\nMarkdown content saved to some changes_Thanks .md\nMarkdown content saved to Fix flush() in clean.md\nMarkdown content saved to Add stepsize + autod.md\nMarkdown content saved to CLI pipes_attempt to.md\nMarkdown content saved to Add callable support.md\nMarkdown content saved to Basic Tk GUI_In resp.md\nMarkdown content saved to fix Display wrong ep.md\nMarkdown content saved to Fix typo_- Fix typo .md\nMarkdown content saved to AttributeError: &amp;#x27;Flo.md\nMarkdown content saved to tqdm hangs up with h.md\nMarkdown content saved to jupyter lab function.md\nMarkdown content saved to next release v4.60.0.md\nMarkdown content saved to Suggestion: optional.md\nMarkdown content saved to Fix that tqdm_class .md\nMarkdown content saved to notebook: support `d.md\nMarkdown content saved to return tqdm instance.md\nMarkdown content saved to No progress in Jupyt.md\nMarkdown content saved to Provide itertools wr.md\nMarkdown content saved to Suport for use in Ho.md\nMarkdown content saved to next release: v4.59..md\nMarkdown content saved to guess length using h.md\nMarkdown content saved to Adding an asyncio.ga.md\nMarkdown content saved to Create progress bar .md\nMarkdown content saved to add `dask` submodule.md\nMarkdown content saved to tqdm_notebook doesn&amp;#x27;.md\nMarkdown content saved to run tqdm in jupyter .md\nMarkdown content saved to Allow hiding progres.md\nMarkdown content saved to next release v4.58.0.md\nMarkdown content saved to Proposal: option for.md\nMarkdown content saved to Allow hiding the pro.md\nMarkdown content saved to add flag to suppress.md\nMarkdown content saved to Pandas.Panel FutureW.md\nMarkdown content saved to next release v4.57.0.md\nMarkdown content saved to `DummyTqdmFile` line.md\nMarkdown content saved to tqdm.auto.tqdm probl.md\nMarkdown content saved to tqdm.reset() crashes.md\nMarkdown content saved to next release: v4.56..md\nMarkdown content saved to next release v4.56.1.md\nMarkdown content saved to Binder demo doesn&amp;#x27;t .md\nMarkdown content saved to tqdm.__repr__() cras.md\nMarkdown content saved to Add support for upda.md\nMarkdown content saved to tqdm v4.56 not updat.md\nMarkdown content saved to How to update single.md\nMarkdown content saved to multiple lines when .md\nMarkdown content saved to TqdmWarning: clampin.md\nMarkdown content saved to next release v4.56.0.md\nMarkdown content saved to next release v4.55.2.md\nMarkdown content saved to Fix code quality iss.md\nMarkdown content saved to docs: update the sim.md\nMarkdown content saved to Work with enumerate(.md\nMarkdown content saved to next release v4.55.1.md\nMarkdown content saved to fix pandas==1.2.0_- .md\nMarkdown content saved to Estimate remaining t.md\nMarkdown content saved to EMA implementation n.md\nMarkdown content saved to next release v4.55.0.md\nMarkdown content saved to It is not correct to.md\nMarkdown content saved to TQDM progress bars i.md\nMarkdown content saved to Adds check for VSCOD.md\nMarkdown content saved to Progress bar and upl.md\nMarkdown content saved to next release v4.54.1.md\nMarkdown content saved to Wrong spanish transl.md\nMarkdown content saved to Updating tqdm&amp;#x27;s desc.md\nMarkdown content saved to next release v4.54.0.md\nMarkdown content saved to Round number in form.md\nMarkdown content saved to next release v4.53.0.md\nMarkdown content saved to CLI: nested `contrib.md\nMarkdown content saved to Drop distutils_- dis.md\nMarkdown content saved to Using a subclass of .md\nMarkdown content saved to Python 2.6 UnicodeEn.md\nMarkdown content saved to tqdm_telegram exhaus.md\nMarkdown content saved to audible progress bar.md\nMarkdown content saved to Tqdm notebook _ tran.md\nMarkdown content saved to next release v4.52.0.md\nMarkdown content saved to Python 3.9 tests_.md\nMarkdown content saved to notebook: delay init.md\nMarkdown content saved to tqdm.keras add keywo.md\nMarkdown content saved to contrib.telegram_Exa.md\nMarkdown content saved to [feature request] fo.md\nMarkdown content saved to Sys.stdout redirecti.md\nMarkdown content saved to ImportError_I am get.md\nMarkdown content saved to Time measurement not.md\nMarkdown content saved to Update README.rst_Re.md\nMarkdown content saved to replace nose =&amp;gt; pyte.md\nMarkdown content saved to next release v4.51.0.md\nMarkdown content saved to [Feature Request] Es.md\nMarkdown content saved to tests: replace nose .md\nMarkdown content saved to Colors do not work i.md\nMarkdown content saved to Hacktoberfest: Publi.md\nMarkdown content saved to Test fails on 32-bit.md\nMarkdown content saved to next release v4.50.2.md\nMarkdown content saved to MPI compatibility_- .md\nMarkdown content saved to Race condition with .md\nMarkdown content saved to next release v4.50.1.md\nMarkdown content saved to Not thread-safe with.md\nMarkdown content saved to Tqdm&amp;#x27;s write() not w.md\nMarkdown content saved to next release v4.50.0.md\nMarkdown content saved to add bar `colour` opt.md\nMarkdown content saved to notebook: fix descri.md\nMarkdown content saved to fix write errors whe.md\nMarkdown content saved to causing job died whe.md\nMarkdown content saved to [JupyterLab] tqdm.au.md\nMarkdown content saved to Colored Progress Bar.md\nMarkdown content saved to Separate colors for .md\nMarkdown content saved to Variable to control .md\nMarkdown content saved to AttributeError: modu.md\nMarkdown content saved to add contrib.discord:.md\nMarkdown content saved to TqdmDeprecationWarni.md\nMarkdown content saved to next release v4.49.0.md\nMarkdown content saved to cli: add --update an.md\nMarkdown content saved to cli: add `--tee` and.md\nMarkdown content saved to CLI input options an.md\nMarkdown content saved to Incorrect number of .md\nMarkdown content saved to have tqdm call a cal.md\nMarkdown content saved to Having tqdm do nothi.md\nMarkdown content saved to fix total ETA when u.md\nMarkdown content saved to cli: add `--tee`_- [.md\nMarkdown content saved to tqdm.auto never uses.md\nMarkdown content saved to fix version detectio.md\nMarkdown content saved to Visual output bug af.md\nMarkdown content saved to Query about pull req.md\nMarkdown content saved to I think the project .md\nMarkdown content saved to format imports to be.md\nMarkdown content saved to Accidental strongref.md\nMarkdown content saved to Minimal-printing pro.md\nMarkdown content saved to write() not printing.md\nMarkdown content saved to built-in support for.md\nMarkdown content saved to IPython notebook pan.md\nMarkdown content saved to Unexpected keyword a.md\nMarkdown content saved to next release v4.48.1.md\nMarkdown content saved to Progress bar always .md\nMarkdown content saved to tenumerate ignores t.md\nMarkdown content saved to ANSI escape codes br.md\nMarkdown content saved to Bad formatting when .md\nMarkdown content saved to tqdm crashes because.md\nMarkdown content saved to License clarificatio.md\nMarkdown content saved to Metrics Error in cat.md\nMarkdown content saved to [QUESTION] Where is .md\nMarkdown content saved to AttributeError: &amp;#x27;Tqd.md\nMarkdown content saved to [QUESTION] Npm-frien.md\nMarkdown content saved to add `tqdm.asyncio`_W.md\nMarkdown content saved to next release v4.48.0.md\nMarkdown content saved to Asynchronous tqdm_Fr.md\nMarkdown content saved to support async genera.md\nMarkdown content saved to Async coroutine supp.md\nMarkdown content saved to ImportError: No modu.md\nMarkdown content saved to Fix test_min_iters().md\nMarkdown content saved to Binary unit prefixes.md\nMarkdown content saved to Speed up tqdm.auto i.md\nMarkdown content saved to next release v4.47.0.md\nMarkdown content saved to Minor documentation .md\nMarkdown content saved to TypeError with Itera.md\nMarkdown content saved to more succinct traceb.md\nMarkdown content saved to importing tqdm.auto .md\nMarkdown content saved to Use tqdm with rm -fr.md\nMarkdown content saved to Update pbar descript.md\nMarkdown content saved to Empty bar following .md\nMarkdown content saved to Nested + desc = bugg.md\nMarkdown content saved to Paper: Update impact.md\nMarkdown content saved to add py38_- [x] add a.md\nMarkdown content saved to Paper: Spell project.md\nMarkdown content saved to Multiline in Linux s.md\nMarkdown content saved to next release v4.46.1.md\nMarkdown content saved to thread_map should be.md\nMarkdown content saved to Update README.rst_Ha.md\nMarkdown content saved to Fix error due to mis.md\nMarkdown content saved to Iterate over a _io.T.md\nMarkdown content saved to jupyterlab start new.md\nMarkdown content saved to .close method to rai.md\nMarkdown content saved to rclone-like progress.md\nMarkdown content saved to Progress bar execute.md\nMarkdown content saved to What is ... (more hi.md\nMarkdown content saved to Completion_- [x] pro.md\nMarkdown content saved to Next release v4.46.0.md\nMarkdown content saved to bash completion_Ther.md\nMarkdown content saved to tqdm wrapper on requ.md\nMarkdown content saved to &amp;#x27;reverse&amp;#x27; hook to re.md\nMarkdown content saved to Nested loops not dis.md\nMarkdown content saved to If multiple tqdm are.md\nMarkdown content saved to Fix: release lock if.md\nMarkdown content saved to [question] Is there .md\nMarkdown content saved to pandas interrupt cau.md\nMarkdown content saved to Supress initial disp.md\nMarkdown content saved to Bash autocomplete ba.md\nMarkdown content saved to Feature: shorted des.md\nMarkdown content saved to Shorter description .md\nMarkdown content saved to .update() not updati.md\nMarkdown content saved to I&amp;#x27;m facing same issu.md\nMarkdown content saved to just one bar_Hello, .md\nMarkdown content saved to Nested progressbars .md\nMarkdown content saved to Set the block size t.md\nMarkdown content saved to fix current thread j.md\nMarkdown content saved to Description text cut.md\nMarkdown content saved to next release v4.45.0.md\nMarkdown content saved to tqdm output view_Hi .md\nMarkdown content saved to rework `_decr_instan.md\nMarkdown content saved to specify iter_s or s_.md\nMarkdown content saved to View tqdm output fil.md\nMarkdown content saved to Progress Steps not c.md\nMarkdown content saved to The inner loop of ne.md\nMarkdown content saved to Progress Bar epileps.md\nMarkdown content saved to Exceptions_- [x] Pro.md\nMarkdown content saved to memory leak when usi.md\nMarkdown content saved to fix import error =&amp;gt; .md\nMarkdown content saved to ImportError: cannot .md\nMarkdown content saved to add `nrows`_- [x] ex.md\nMarkdown content saved to Unwrap fps before co.md\nMarkdown content saved to next release v4.44.0.md\nMarkdown content saved to add `nrows`_- expose.md\nMarkdown content saved to external_write_mode .md\nMarkdown content saved to tqdm.contrib.concurr.md\nMarkdown content saved to GroupBy.progress_agg.md\nMarkdown content saved to Update Arabic spelli.md\nMarkdown content saved to Container class for .md\nMarkdown content saved to Python3 CLI UTF_byte.md\nMarkdown content saved to next release v4.43.0.md\nMarkdown content saved to Verify_fix spelling .md\nMarkdown content saved to &amp;#x27;tqdm_notebook.set_d.md\nMarkdown content saved to Fix set_description .md\nMarkdown content saved to Fix typo_- [x] I hav.md\nMarkdown content saved to do not call len on i.md\nMarkdown content saved to next release v4.42.1.md\nMarkdown content saved to Failed to display Ju.md\nMarkdown content saved to tqdm.keras: keras no.md\nMarkdown content saved to add convenience `con.md\nMarkdown content saved to next release v4.42.0.md\nMarkdown content saved to Notebook tqdm should.md\nMarkdown content saved to Drop support for EOL.md\nMarkdown content saved to Using multiple tqdm .md\nMarkdown content saved to Update progress bar .md\nMarkdown content saved to Bug: TqdmCallback do.md\nMarkdown content saved to fix keras batch_size.md\nMarkdown content saved to How to add callback .md\nMarkdown content saved to Empty progress bar w.md\nMarkdown content saved to Rename LICENCE to LI.md\nMarkdown content saved to keras_Incorporate an.md\nMarkdown content saved to Specify `tqdm_notebo.md\nMarkdown content saved to Add fixed width bar .md\nMarkdown content saved to set_description caus.md\nMarkdown content saved to next release v4.41.0.md\nMarkdown content saved to Progress bar full du.md\nMarkdown content saved to keras callback_Offic.md\nMarkdown content saved to automate Windows and.md\nMarkdown content saved to trim on overflow_- [.md\nMarkdown content saved to fix unhashable panda.md\nMarkdown content saved to progress_apply bug: .md\nMarkdown content saved to fractional total key.md\nMarkdown content saved to Access to time elaps.md\nMarkdown content saved to Unicode error after .md\nMarkdown content saved to Support imprecise `n.md\nMarkdown content saved to next release v4.40.0.md\nMarkdown content saved to better `update(n: fl.md\nMarkdown content saved to Add support for data.md\nMarkdown content saved to added a missing impo.md\nMarkdown content saved to t_- [ ] I have visit.md\nMarkdown content saved to Support skins_- [x] .md\nMarkdown content saved to Add missing isatty().md\nMarkdown content saved to next release v4.39.0.md\nMarkdown content saved to auto-snap_Automate s.md\nMarkdown content saved to Add check for pandas.md\nMarkdown content saved to Replace dedent calls.md\nMarkdown content saved to automate building_Ge.md\nMarkdown content saved to Locking_- [x] add an.md\nMarkdown content saved to Do we need a `tenume.md\nMarkdown content saved to non-blocking locks_A.md\nMarkdown content saved to Support Google Colab.md\nMarkdown content saved to next release_- poten.md\nMarkdown content saved to wget example assumes.md\nMarkdown content saved to tqdm and: yield, zip.md\nMarkdown content saved to custom bar_format do.md\nMarkdown content saved to 100%  not equals n_t.md\nMarkdown content saved to Description placemen.md\nMarkdown content saved to MNT: set stack level.md\nMarkdown content saved to Recognize wide chara.md\nMarkdown content saved to Use unicodedata.east.md\nMarkdown content saved to Widechar_- use `unic.md\nMarkdown content saved to Fix print_status whe.md\nMarkdown content saved to add a feature to mak.md\nMarkdown content saved to tqdm.write() breaks .md\nMarkdown content saved to LICENSE for v4.28.1_.md\nMarkdown content saved to Progressbar stick to.md\nMarkdown content saved to update submodules_Up.md\nMarkdown content saved to next release - updat.md\nMarkdown content saved to Proposal for smooth .md\nMarkdown content saved to Fix #740_Verified th.md\nMarkdown content saved to Pythonic submodules .md\nMarkdown content saved to `tqdm_notebook.set_d.md\nMarkdown content saved to tqdm_notebook: stran.md\nMarkdown content saved to Progress bar is alwa.md\nMarkdown content saved to After using try_exce.md\nMarkdown content saved to Windows+Spyder: why .md\nMarkdown content saved to tqdm.pandas() not wo.md\nMarkdown content saved to Progess not running .md\nMarkdown content saved to io.BytesIO &amp;#x27;file&amp;#x27; (s.md\nMarkdown content saved to `tqdm_notebook` fail.md\nMarkdown content saved to Fixed width left and.md\nMarkdown content saved to &amp;#x27;tqdm&amp;#x27; object has no.md\nMarkdown content saved to test issue in `Test .md\nMarkdown content saved to add Bar.__format__ h.md\nMarkdown content saved to specify bar width fo.md\nMarkdown content saved to Fix `tqdm_notebook` .md\nMarkdown content saved to Fix tqdm_notebook re.md\nMarkdown content saved to remove the = between.md\nMarkdown content saved to Release 4.34.0: nest.md\nMarkdown content saved to shifting nested_para.md\nMarkdown content saved to Inconstitent CLI arg.md\nMarkdown content saved to Completed nested_par.md\nMarkdown content saved to Correct link to awes.md\nMarkdown content saved to Disable progress bar.md\nMarkdown content saved to fix broken url link .md\nMarkdown content saved to CMD line overlaps ne.md\nMarkdown content saved to Fix typo in awesome-.md\nMarkdown content saved to [Question] Working t.md\nMarkdown content saved to Fix typos_.md\nMarkdown content saved to Last vs average iter.md\nMarkdown content saved to Add support for puls.md\nMarkdown content saved to tqdm no longer works.md\nMarkdown content saved to PyTorch TQDM conflic.md\nMarkdown content saved to [Feature request] Fl.md\nMarkdown content saved to Best way to have sho.md\nMarkdown content saved to Workaround lack of m.md\nMarkdown content saved to tqdm.update() does n.md\nMarkdown content saved to tqdm object cannot b.md\nMarkdown content saved to Fix &amp;#x27;Set changed siz.md\nMarkdown content saved to Fix tqdm._instances .md\nMarkdown content saved to Fix usage_You can&amp;#x27;t .md\nMarkdown content saved to tqdm_auto to auto de.md\nMarkdown content saved to [question] with nest.md\nMarkdown content saved to result of print stat.md\nMarkdown content saved to Installing tqdm via .md\nMarkdown content saved to tqdm: fix casting to.md\nMarkdown content saved to notebook with unknow.md\nMarkdown content saved to release v4.32.0_- [ .md\nMarkdown content saved to Rename RMOTR Noteboo.md\nMarkdown content saved to Move progress bar ba.md\nMarkdown content saved to [Feature_wishlist] N.md\nMarkdown content saved to Display meter instea.md\nMarkdown content saved to How to create a dyna.md\nMarkdown content saved to Use setuptools setup.md\nMarkdown content saved to Get version from git.md\nMarkdown content saved to tqdm.write &amp;#x27;int&amp;#x27; obj.md\nMarkdown content saved to Windows 10 bug_code .md\nMarkdown content saved to Crash on Windows: OS.md\nMarkdown content saved to Random deadlocks und.md\nMarkdown content saved to cleanup doc re: post.md\nMarkdown content saved to Progress bar appear .md\nMarkdown content saved to How to use tqdm with.md\nMarkdown content saved to Manual muti-line tqd.md\nMarkdown content saved to Parallelism safety (.md\nMarkdown content saved to Bar is not drawn on .md\nMarkdown content saved to Add support for buil.md\nMarkdown content saved to Avoid flake8ing .tox.md\nMarkdown content saved to Maybe set the defaul.md\nMarkdown content saved to Fix warnings that ar.md\nMarkdown content saved to T673 altendky fix an.md\nMarkdown content saved to v4.31.0 fails in Jen.md\nMarkdown content saved to Bars_- [x] piggy bac.md\nMarkdown content saved to Write bytes to stdou.md\nMarkdown content saved to Add unit option to b.md\nMarkdown content saved to Allow bar_format wit.md\nMarkdown content saved to Interactive demo for.md\nMarkdown content saved to `bar_format` dict_ex.md\nMarkdown content saved to Modularize pyMakefil.md\nMarkdown content saved to fix: race condition .md\nMarkdown content saved to estimated time skew .md\nMarkdown content saved to print_get final nest.md\nMarkdown content saved to Interactive demos_cl.md\nMarkdown content saved to Hanging pipes in pyt.md\nMarkdown content saved to Make sure _lock exis.md\nMarkdown content saved to [Feature] Allow `tot.md\nMarkdown content saved to Recognize OpenBSD as.md\nMarkdown content saved to Fixed missing attr p.md\nMarkdown content saved to Fix minor documentat.md\nMarkdown content saved to Use release 3.7 for .md\nMarkdown content saved to Avoid global multipr.md\nMarkdown content saved to AttributeError: &amp;#x27;Ser.md\nMarkdown content saved to Is there a way to re.md\nMarkdown content saved to tqdm_notebook bar ma.md\nMarkdown content saved to tqdm_notebook fails .md\nMarkdown content saved to How to make progress.md\nMarkdown content saved to tensorflow_core_kern.md\nMarkdown content saved to upgraded `pip` progr.md\nMarkdown content saved to tqdm progress bar no.md\nMarkdown content saved to Change default for `.md\nMarkdown content saved to CLI: add `--manpath`.md\nMarkdown content saved to installation failure.md\nMarkdown content saved to Adjust EMA smoothing.md\nMarkdown content saved to fix the famous WeakS.md\nMarkdown content saved to Postfix numbers are .md\nMarkdown content saved to Fix tqdm_notebook de.md\nMarkdown content saved to Fix unit_scale rate_.md\nMarkdown content saved to fix a bug in tqdm_no.md\nMarkdown content saved to Wrong remaining time.md\nMarkdown content saved to Google Colab (&amp;amp; Jupy.md\nMarkdown content saved to pip install not work.md\nMarkdown content saved to tqdm prints new line.md\nMarkdown content saved to Exception printed wh.md\nMarkdown content saved to Drop Py 2.6 support?.md\nMarkdown content saved to Colab Notebook - Nam.md\nMarkdown content saved to [suggest] provide a .md\nMarkdown content saved to address pandas compa.md\nMarkdown content saved to fix smoothing bug_in.md\nMarkdown content saved to smoothing not workin.md\nMarkdown content saved to Fix typo in _tqdm_no.md\nMarkdown content saved to When &amp;#x27;index&amp;#x27; or &amp;#x27;col.md\nMarkdown content saved to fix a typo in README.md\nMarkdown content saved to Fix a typo in error .md\nMarkdown content saved to [WIP] Handle outputs.md\nMarkdown content saved to pbar.set_description.md\nMarkdown content saved to pymc3 and tqdm sampl.md\nMarkdown content saved to Add suffix to progre.md\nMarkdown content saved to No module called tqd.md\nMarkdown content saved to Include autonotebook.md\nMarkdown content saved to Add link to evolving.md\nMarkdown content saved to ignore ANSI escape c.md\nMarkdown content saved to Bar length not calcu.md\nMarkdown content saved to Deadlock with a valu.md\nMarkdown content saved to Monitor does not exi.md\nMarkdown content saved to Versions with no Arb.md\nMarkdown content saved to magic tqdm_```python.md\nMarkdown content saved to Clarify pandas and t.md\nMarkdown content saved to Fix issue 579_ - fix.md\nMarkdown content saved to Wrong rounding for h.md\nMarkdown content saved to Can&amp;#x27;t evaluate tqdm .md\nMarkdown content saved to How to show read two.md\nMarkdown content saved to Changing (reducing) .md\nMarkdown content saved to Add a token to the p.md\nMarkdown content saved to Newlines left behind.md\nMarkdown content saved to Add python_requires .md\nMarkdown content saved to Support pandas 0.23..md\nMarkdown content saved to Jupyter Notebook 5 s.md\nMarkdown content saved to deadlock between TMo.md\nMarkdown content saved to Fix broken import of.md\nMarkdown content saved to Fix overlap of neste.md\nMarkdown content saved to Restting progress ba.md\nMarkdown content saved to solve synchronisatio.md\nMarkdown content saved to Fix AttributeError: .md\nMarkdown content saved to Fixed an error when .md\nMarkdown content saved to Fix `update()` has n.md\nMarkdown content saved to Add progress_apply f.md\nMarkdown content saved to Add missing import i.md\nMarkdown content saved to Add ncols to specify.md\nMarkdown content saved to tqdm_notebook and tq.md\nMarkdown content saved to Add `total` support .md\nMarkdown content saved to Support for tqdm pro.md\nMarkdown content saved to fix the problem #299.md\nMarkdown content saved to Possibly bug when ru.md\nMarkdown content saved to progress_apply repor.md\nMarkdown content saved to Allow to customize e.md\nMarkdown content saved to non-str `postfix` (l.md\nMarkdown content saved to `tqdm.write()` broke.md\nMarkdown content saved to __repr__ function_At.md\nMarkdown content saved to `write()` and synchr.md\nMarkdown content saved to Progress indicator i.md\nMarkdown content saved to Pandas apply on eith.md\nMarkdown content saved to Missing total for Da.md\nMarkdown content saved to Pandas progress bar .md\nMarkdown content saved to Remove support for *.md\nMarkdown content saved to 4.19.7 and 4.19.8 ha.md\nMarkdown content saved to TMonitor warnings_- .md\nMarkdown content saved to Fix TMonitor thread .md\nMarkdown content saved to Install fails for &amp;gt;=.md\nMarkdown content saved to When using with whil.md\nMarkdown content saved to RuntimeError: can&amp;#x27;t .md\nMarkdown content saved to Function tqdm_notebo.md\nMarkdown content saved to Put the tqdm positio.md\nMarkdown content saved to Avoid manipulating u.md\nMarkdown content saved to CLI: Cannot escape h.md\nMarkdown content saved to ceLogic ID_- [ ] I h.md\nMarkdown content saved to Bar doesn&amp;#x27;t display .md\nMarkdown content saved to Fix for aarch64 Andr.md\nMarkdown content saved to fix set_description .md\nMarkdown content saved to Automatically choose.md\nMarkdown content saved to Automatically use --.md\nMarkdown content saved to Access to time remai.md\nMarkdown content saved to Output pass to calla.md\nMarkdown content saved to unexpected new lines.md\nMarkdown content saved to Can&amp;#x27;t display a proc.md\nMarkdown content saved to tqdm_notebook someti.md\nMarkdown content saved to Add tqdm_notebook.wr.md\nMarkdown content saved to Hide progress bar if.md\nMarkdown content saved to Correct prefix for &amp;#x27;.md\nMarkdown content saved to set_description does.md\nMarkdown content saved to Notebook validation .md\nMarkdown content saved to enumerate mess the t.md\nMarkdown content saved to not refreshing same .md\nMarkdown content saved to tqdm_pandas() causes.md\nMarkdown content saved to Type issue with nump.md\nMarkdown content saved to nest progress bars s.md\nMarkdown content saved to add opencollective b.md\nMarkdown content saved to Example code snippet.md\nMarkdown content saved to &amp;quot;redirecting writing.md\nMarkdown content saved to always flush after m.md\nMarkdown content saved to .write() clashes wit.md\nMarkdown content saved to Fix Lock NotImplemen.md\nMarkdown content saved to Delete unused var_`t.md\nMarkdown content saved to .write() _still_ cla.md\nMarkdown content saved to flush on refresh_- [.md\nMarkdown content saved to No output on Python3.md\nMarkdown content saved to Calling .write() at .md\nMarkdown content saved to `set_description` ta.md\nMarkdown content saved to Being able to show s.md\nMarkdown content saved to frac division tries .md\nMarkdown content saved to How can I use tdqm i.md\nMarkdown content saved to Minor tidy 2_remove .md\nMarkdown content saved to Importing tqdm break.md\nMarkdown content saved to Question regarding b.md\nMarkdown content saved to Added contextmanager.md\nMarkdown content saved to Progress bar disappe.md\nMarkdown content saved to Progress bars jump a.md\nMarkdown content saved to Documentation revisi.md\nMarkdown content saved to Redirect both sys.st.md\nMarkdown content saved to Disabling stats_Is t.md\nMarkdown content saved to Scrolling behavior i.md\nMarkdown content saved to tqdm_notebook errori.md\nMarkdown content saved to Better Unicode termi.md\nMarkdown content saved to tqdm.n not set when .md\nMarkdown content saved to Use self.avg_time in.md\nMarkdown content saved to set_description() an.md\nMarkdown content saved to CLI: better installa.md\nMarkdown content saved to Undefined error when.md\nMarkdown content saved to Command line argumen.md\nMarkdown content saved to Why do I see multipl.md\nMarkdown content saved to 4.15.0 regression: T.md\nMarkdown content saved to Nested loops in tqdm.md\nMarkdown content saved to Will tqdm support py.md\nMarkdown content saved to Update README.rst wi.md\nMarkdown content saved to Travis py2.6_Don&amp;#x27;t r.md\nMarkdown content saved to add numeric support .md\nMarkdown content saved to Progress bar not dis.md\nMarkdown content saved to Avoid use of setchec.md\nMarkdown content saved to Progress bar does NO.md\nMarkdown content saved to Fix &amp;#x27;known issues&amp;#x27; l.md\nMarkdown content saved to Fix typos_\r_- [x] I .md\nMarkdown content saved to Flag &amp;quot;disable=true&amp;quot; .md\nMarkdown content saved to set total for apply .md\nMarkdown content saved to tqdm and dynamic set.md\nMarkdown content saved to Request for python 3.md\nMarkdown content saved to Spurious number inse.md\nMarkdown content saved to Use file=None not fi.md\nMarkdown content saved to Set file before tryi.md\nMarkdown content saved to TQDM producing multi.md\nMarkdown content saved to Several Progress Bar.md\nMarkdown content saved to unit_divisor, allowi.md\nMarkdown content saved to Nested Trees?_I see .md\nMarkdown content saved to fix manually positio.md\nMarkdown content saved to unknown system fix_-.md\nMarkdown content saved to Fix `file` default v.md\nMarkdown content saved to minor tidy (#6)_- [ .md\nMarkdown content saved to fix navigation for w.md\nMarkdown content saved to Getting more done in.md\nMarkdown content saved to Ada ifo_- [ ] I have.md\nMarkdown content saved to Not an issue, just s.md\nMarkdown content saved to Don&amp;#x27;t append &amp;quot;:  &amp;quot; t.md\nMarkdown content saved to Getting avg_time fro.md\nMarkdown content saved to Zip makes tqdm buggy.md\nMarkdown content saved to Automatic selection .md\nMarkdown content saved to Support custom metri.md\nMarkdown content saved to make it work with co.md\nMarkdown content saved to Can i force a newlin.md\nMarkdown content saved to Truncate infinite ge.md\nMarkdown content saved to tqdm can&amp;#x27;t work with.md\nMarkdown content saved to 4.11.2: four test fa.md\nMarkdown content saved to fix monitor delete r.md\nMarkdown content saved to AttributeError: moni.md\nMarkdown content saved to tqdm._version: insec.md\nMarkdown content saved to Fix security issue i.md\nMarkdown content saved to sys.getcheckinterval.md\nMarkdown content saved to sys.setcheckinterval.md\nMarkdown content saved to add Py3.6_fixes #333.md\nMarkdown content saved to some tests aren&amp;#x27;t &amp;quot;s.md\nMarkdown content saved to Add set_postfix_Add .md\nMarkdown content saved to Better GitHub contri.md\nMarkdown content saved to Flush in refresh() a.md\nMarkdown content saved to Fix parallel bars pr.md\nMarkdown content saved to Fix typo in README_F.md\nMarkdown content saved to Travis_fix Travis&amp;#x27; P.md\nMarkdown content saved to Travis pypy3 failure.md\nMarkdown content saved to  AttributeError: &amp;#x27;tq.md\nMarkdown content saved to Old progressbars sta.md\nMarkdown content saved to tqdm_notebook not al.md\nMarkdown content saved to `tqdm_notebook` for .md\nMarkdown content saved to Fix maxinterval to a.md\nMarkdown content saved to fix broken link in R.md\nMarkdown content saved to Fix time() in refres.md\nMarkdown content saved to cleaner tqdm_noteboo.md\nMarkdown content saved to refresh() reports th.md\nMarkdown content saved to Fix coverage of pand.md\nMarkdown content saved to Ignore coverall fail.md\nMarkdown content saved to Reorder Travis depen.md\nMarkdown content saved to low efficiency_When .md\nMarkdown content saved to Ugly logo_This sound.md\nMarkdown content saved to known-issues_Discuss.md\nMarkdown content saved to Preparing pypi packa.md\nMarkdown content saved to Update GIFs_Addresse.md\nMarkdown content saved to Additional control o.md\nMarkdown content saved to Update graphic_The f.md\nMarkdown content saved to Code Climate_Code Cl.md\nMarkdown content saved to pypy + PyCharm + tqd.md\nMarkdown content saved to Recommended recipe f.md\nMarkdown content saved to uncompression (compr.md\nMarkdown content saved to Tracking process of .md\nMarkdown content saved to minor optimistaion_a.md\nMarkdown content saved to Addendum to #288_Cle.md\nMarkdown content saved to initial benchmark fr.md\nMarkdown content saved to asv-based performanc.md\nMarkdown content saved to Monitoring thread to.md\nMarkdown content saved to Output progress does.md\nMarkdown content saved to Barebones tqdm in su.md\nMarkdown content saved to CLI --bytes_~~work i.md\nMarkdown content saved to Fix total computatio.md\nMarkdown content saved to Style fixes_partiall.md\nMarkdown content saved to disable automaticall.md\nMarkdown content saved to fixed refresh() and .md\nMarkdown content saved to Questions on SO: pip.md\nMarkdown content saved to Adding extra informa.md\nMarkdown content saved to update(n=0) causes Z.md\nMarkdown content saved to Faster simple bar fo.md\nMarkdown content saved to Fix Travis cache pan.md\nMarkdown content saved to Disable coveralls be.md\nMarkdown content saved to Output crust sometim.md\nMarkdown content saved to Fancy indeterminate .md\nMarkdown content saved to Removed commented-ou.md\nMarkdown content saved to Abstraction layers +.md\nMarkdown content saved to Copyediting for READ.md\nMarkdown content saved to Add code formatting .md\nMarkdown content saved to Get rid of exception.md\nMarkdown content saved to Interactive docstrin.md\nMarkdown content saved to tqdm for C++?_Perhap.md\nMarkdown content saved to pandas.Series.progre.md\nMarkdown content saved to Website needs link t.md\nMarkdown content saved to tqdm work with loggi.md\nMarkdown content saved to Oddly, numbers somet.md\nMarkdown content saved to Installing 4.8.2 res.md\nMarkdown content saved to Useage of delim argu.md\nMarkdown content saved to Pandas series.map_He.md\nMarkdown content saved to Removed commented ou.md\nMarkdown content saved to Provide a parameter .md\nMarkdown content saved to Warnings_force-raise.md\nMarkdown content saved to Fix tqdm_pandas(tqdm.md\nMarkdown content saved to Outdated contributin.md\nMarkdown content saved to Wrapped monospacing .md\nMarkdown content saved to Mono space_from #205.md\nMarkdown content saved to common_known issues_.md\nMarkdown content saved to ? for buttons_Image:.md\nMarkdown content saved to Automate `nested` wi.md\nMarkdown content saved to IPython aliased impo.md\nMarkdown content saved to Could the pandas pro.md\nMarkdown content saved to Fix tqdm.write() whe.md\nMarkdown content saved to Update test to run w.md\nMarkdown content saved to address them all_add.md\nMarkdown content saved to 4.7.4 vs. 4.7.6_Just.md\nMarkdown content saved to Not working when sin.md\nMarkdown content saved to pandas series suppor.md\nMarkdown content saved to Calling script with .md\nMarkdown content saved to Flaky nosetests plug.md\nMarkdown content saved to colorama is uncondit.md\nMarkdown content saved to RF: delay imports of.md\nMarkdown content saved to Fix temporary bar di.md\nMarkdown content saved to Updatable descriptio.md\nMarkdown content saved to tqdm does not work w.md\nMarkdown content saved to tqdm_notebook.write(.md\nMarkdown content saved to No Panda support out.md\nMarkdown content saved to pandas.DataFrame.app.md\nMarkdown content saved to Option to ignore tqd.md\nMarkdown content saved to Add --null option fo.md\nMarkdown content saved to notebook warning sup.md\nMarkdown content saved to Cli delims_custom PO.md\nMarkdown content saved to Add ipython_jupyter .md\nMarkdown content saved to jitter in IPython no.md\nMarkdown content saved to can&amp;#x27;t upgrade from p.md\nMarkdown content saved to Difference UI from p.md\nMarkdown content saved to Bar formatting lacks.md\nMarkdown content saved to Fix bar_format break.md\nMarkdown content saved to Provide an option ab.md\nMarkdown content saved to Add no rate inversio.md\nMarkdown content saved to Print function for u.md\nMarkdown content saved to Option to show an ex.md\nMarkdown content saved to Print message 2_Reba.md\nMarkdown content saved to CLI tidy_better help.md\nMarkdown content saved to tqdm.update(0) cause.md\nMarkdown content saved to Update refresh_micro.md\nMarkdown content saved to please include LICEN.md\nMarkdown content saved to Completion checking .md\nMarkdown content saved to Print message_#120 r.md\nMarkdown content saved to Print message_Should.md\nMarkdown content saved to Versioning_.md\nMarkdown content saved to No module named &amp;#x27;doc.md\nMarkdown content saved to Nested bars: Unexpec.md\nMarkdown content saved to ValueError: n (0) ca.md\nMarkdown content saved to tqdm v4 on pypi_Is t.md\nMarkdown content saved to update docs about `l.md\nMarkdown content saved to modularisation_Allow.md\nMarkdown content saved to bars should be posit.md\nMarkdown content saved to MSYS added to enviro.md\nMarkdown content saved to support for MSYS in .md\nMarkdown content saved to Progress bar with lo.md\nMarkdown content saved to Manual .update(0) up.md\nMarkdown content saved to Position error regre.md\nMarkdown content saved to License_addresses #1.md\nMarkdown content saved to Compat fixes_- Fixes.md\nMarkdown content saved to Update examples_Upda.md\nMarkdown content saved to Example doesn&amp;#x27;t work.md\nMarkdown content saved to &amp;#x27;Outstream&amp;#x27; object h.md\nMarkdown content saved to What&amp;#x27;s the best way .md\nMarkdown content saved to leave=True by defaul.md\nMarkdown content saved to Changelog_Add a chan.md\nMarkdown content saved to Add link to changelo.md\nMarkdown content saved to Travis Py32_travis h.md\nMarkdown content saved to Fixed setup.py so th.md\nMarkdown content saved to Progress bar stays o.md\nMarkdown content saved to Sub stats showed as .md\nMarkdown content saved to Negative Updates rai.md\nMarkdown content saved to Support for nested p.md\nMarkdown content saved to Better handling of `.md\nMarkdown content saved to Garbled output on ip.md\nMarkdown content saved to Add progress bar to .md\nMarkdown content saved to Inheritability_Suppo.md\nMarkdown content saved to Update classifier tr.md\nMarkdown content saved to when I run make, giv.md\nMarkdown content saved to run make fail on lin.md\nMarkdown content saved to relative timing for .md\nMarkdown content saved to Consistent performan.md\nMarkdown content saved to Add Python 3.5 test .md\nMarkdown content saved to Fix over-estimated r.md\nMarkdown content saved to fix nested + leave c.md\nMarkdown content saved to Memory optimization_.md\nMarkdown content saved to Progress bar prints .md\nMarkdown content saved to Doesn&amp;#x27;t work in Subl.md\nMarkdown content saved to bar_format option do.md\nMarkdown content saved to add all python versi.md\nMarkdown content saved to Fix for IronPython 2.md\nMarkdown content saved to Update OS support in.md\nMarkdown content saved to amazing_the vim prom.md\nMarkdown content saved to Resume progress, add.md\nMarkdown content saved to Add tqdm.unpause()_C.md\nMarkdown content saved to Restarting a progres.md\nMarkdown content saved to #73: Restarting a pr.md\nMarkdown content saved to Add custom bar forma.md\nMarkdown content saved to Update README URLs b.md\nMarkdown content saved to A few suggestions_He.md\nMarkdown content saved to Auto inverse rate_.md\nMarkdown content saved to Compatible with Free.md\nMarkdown content saved to Solaris ncols compat.md\nMarkdown content saved to Readme examples_Upda.md\nMarkdown content saved to Nested progressbars_.md\nMarkdown content saved to curious about the gi.md\nMarkdown content saved to GUI_Addresses #28._~.md\nMarkdown content saved to misc_- safer `close(.md\nMarkdown content saved to tox nose-timer as su.md\nMarkdown content saved to [Regression] Tqdm fr.md\nMarkdown content saved to fix smoothed dynamic.md\nMarkdown content saved to basic performance te.md\nMarkdown content saved to fixes #54_.md\nMarkdown content saved to Performance test_Sin.md\nMarkdown content saved to Exponentially weight.md\nMarkdown content saved to fully abstracted gui.md\nMarkdown content saved to Moving the GUI into .md\nMarkdown content saved to Be able to display t.md\nMarkdown content saved to Update graphic_Updat.md\nMarkdown content saved to update graphic_fixes.md\nMarkdown content saved to Misc bugfixes_.md\nMarkdown content saved to makefile_migrated fr.md\nMarkdown content saved to dynamic ncols (eg on.md\nMarkdown content saved to Min update_addresses.md\nMarkdown content saved to Move new commands to.md\nMarkdown content saved to Fix: both mininterva.md\nMarkdown content saved to add codecov.io suppo.md\nMarkdown content saved to Include a smoother u.md\nMarkdown content saved to Tqdm2_local branch m.md\nMarkdown content saved to Release a new versio.md\nMarkdown content saved to Change tqdm project .md\nMarkdown content saved to Gui cover_- suppress.md\nMarkdown content saved to GUI?_Ok. This may be.md\nMarkdown content saved to added examples folde.md\nMarkdown content saved to Release new version .md\nMarkdown content saved to Add non-iterator ope.md\nMarkdown content saved to OOP_Classes and func.md\nMarkdown content saved to make tqdm a class_An.md\nMarkdown content saved to Add unit and unit_sc.md\nMarkdown content saved to New string formattin.md\nMarkdown content saved to #egg to refer to the.md\nMarkdown content saved to attempt to set ncols.md\nMarkdown content saved to Small fixes_.md\nMarkdown content saved to compatibility for no.md\nMarkdown content saved to Unicode_Fallback asc.md\nMarkdown content saved to Make coveralls.io ha.md\nMarkdown content saved to Add flag to travis f.md\nMarkdown content saved to Efficiency_fixes #13.md\nMarkdown content saved to Reduce overhead auto.md\nMarkdown content saved to Documentation; Prett.md\nMarkdown content saved to switch README to ReS.md\nMarkdown content saved to Add Makefile_I final.md\nMarkdown content saved to Smoother, bigger, ne.md\nMarkdown content saved to Add an option to dis.md\nMarkdown content saved to Enable progress bar .md\nMarkdown content saved to cleanup___cc @hadim .md\nMarkdown content saved to use 80 columns limit.md\nMarkdown content saved to Add logo to tqdm_Do .md\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;codetools.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
